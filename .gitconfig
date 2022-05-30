@@ -1,0 +1,8 @@
+[user]
+	email = Acceyuriko@gmail.com
+	name = Acceyuriko
+[pull]
+	rebase = true
+
+[alias]
+	lg = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ad)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(auto)%d%C(reset)'
