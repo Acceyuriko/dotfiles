@@ -106,3 +106,7 @@ source $HOME/.cargo/env
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias vim="nvim"
+
+hostip=$(cat /etc/resolv.conf |grep -oP '(?<=nameserver\ ).*')
+alias setp='export https_proxy="http://${hostip}:18888";export http_proxy="http://${hostip}:18888";export all_proxy="socks5://${hostip}:18888";export ALL_PROXY="socks5://${hostip}:18888";'
+alias unsetp='unset https_proxy; unset http_proxy; unset all_proxy; unset ALL_PROXY;'
